@@ -16,4 +16,3 @@ frameworks que añaden funcionalidad a nuestro servidor.
 
 En todas las aplicaciones node tiene que haber un archivo llamado package.json. Para crearlo se usa el comando de
 consola npm init.
-6

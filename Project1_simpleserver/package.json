@@ -1,0 +1,20 @@
+{
+  "name": "simpleserver",
+  "version": "1.0.0",
+  "description": "Servidor Sencillo NodeJS",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/a13marquez/Learn-node-js.git"
+  },
+  "author": "Alvaro Marquez",
+  "license": "GPL",
+  "bugs": {
+    "url": "https://github.com/a13marquez/Learn-node-js/issues"
+  },
+  "homepage": "https://github.com/a13marquez/Learn-node-js"
+}
