@@ -1,0 +1,19 @@
+En nodeJS hay que escribir el servidor, controlar las peticiones HTTP, etc.
+NodeJS tiene modulos, que son extensiones de nodeJS. El modulo http viene por defecto en Node
+con el siguiente código se crea un servidor sencillo:
+  var http = require('http');                             -> indicamos que el módulo http es necesario
+  http.createServer(function(req, res){                   ->se llama al metodo createServer que
+                                                            recibe una función asincrona
+    res.writeHead(200, {'Content-Type': 'text/plain'});   ->si todo es correcto la response devuelve el codigo 200
+                                                            y configura el tipo de respuesta(text(plain))
+    res.end('Hello World\n');                             ->La response finaliza añadiendo el texto hello world
+  }).listen(1337, '127.0.0.1');                           ->Se configura el puerto de escucha y la url
+  console.log('Server running at http://127.0.0.1;1337/') ->Se muestra un mensaje cuando el server está en marcha
+
+
+Existe un repositorio de paquetes denominado NPM en el que se pueden encontrar gran cantidad de paquetes y
+frameworks que añaden funcionalidad a nuestro servidor.
+
+En todas las aplicaciones node tiene que haber un archivo llamado package.json. Para crearlo se usa el comando de
+consola npm init.
+6
